@@ -1,4 +1,20 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Dorian Monnier</title><meta name="author" content="Dorian Monnier"><meta name="description" content="Dorian Monnier website"><meta name="viewport" content="width=device-width, initial-scale=1"><style>
+package main
+
+import "time"
+
+var date = time.Now().UTC().Format("2006/01/02")
+
+templ page(rawBody string) {
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Dorian Monnier</title>
+  <meta name="author" content="Dorian Monnier" />
+  <meta name="description" content="Dorian Monnier website" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
     @media (prefers-color-scheme: light) {
       :root {
         --main-bg-color: #fff;
@@ -30,20 +46,18 @@
 	      max-width:650px;
         margin: 40px auto;
     }
-  </style></head><body><header><h1>Dorian Monnier</h1></header><article><h2 id="hello-world">Hello world</h2>
-
-<p>👋</p>
-
-<blockquote>
-<p>I&rsquo;m a blockquote</p>
-</blockquote>
-
-<ul>
-<li>And I&rsquo;m a list</li>
-</ul>
-
-<p>Some code maybe :</p>
-
-<pre><code class="language-python">print(&quot;Hello world!&quot;)
-</code></pre>
-</article><footer><p>Generated the 2024/04/30</p></footer></body></html>
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Dorian Monnier</h1>
+    </header>
+    <article>
+        @templ.Raw(rawBody)
+    </article>
+    <footer>
+        <p>Generated the {date}</p>
+    </footer>
+</body>
+</html>
+}
