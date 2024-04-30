@@ -1,1 +1,50 @@
-<p>Hey!</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dorian Monnier</title>
+  <meta name="author" content="Dorian Monnier">
+  <meta name="description" content="Dorian Monnier website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    @media (prefers-color-scheme: light) {
+      :root {
+        --main-bg-color: #fff;
+        --font-color: #111;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --main-bg-color: #3A3A3A;
+        --font-color: #eee;
+      }
+    }
+
+    p, h1, h2, h3, h4, h5, h6, blockquote {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--font-color);
+    }
+
+    h1 {
+        border-bottom: 1px solid #777;
+    }
+
+    html {
+      background-color: var(--main-bg-color);
+    }
+
+    body {
+	      max-width:650px;
+        margin: 40px auto;
+    }
+  </style>
+</head>
+
+<body>
+    <h1>Dorian Monnier</h1>
+    <p>👋</p>
+</body>
+
+</html>
