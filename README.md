@@ -1,2 +1,0 @@
-# dorianmonnier.fr
-Personal website
