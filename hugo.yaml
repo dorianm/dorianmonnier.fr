@@ -1,0 +1,42 @@
+---
+baseURL: 'https://dorianmonnier.fr/'
+languageCode: 'en-us'
+title: 'Dorian Monnier'
+enableEmoji: true
+#menu:
+#  main:
+#    - identifier: 'posts'
+#      name: 'Posts'
+#      url: '/posts/'
+#    - identifier: 'Feed'
+#      name: 'RSS'
+#      url: '/index.xml'
+theme: 'PaperMod'
+params:
+  defaultTheme: auto
+  env: production
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  author: 'Dorian Monnier'
+  profileMode:
+    enabled: true
+    subtitle: "Devops Engineer based on :fr: :eu:"
+    imageUrl: "/profile.jpg"
+    imageTitle: "Myself and my son"
+    imageWidth: 180
+    imageHeight: 180
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/dorianm"
+    - name: "stackoverflow"
+      url: "https://stackoverflow.com/users/1369579/dorian"
+    - name: "bluesky"
+      url: "https://bsky.app/profile/dorianmonnier.fr"
+markup:
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    lineNos: true

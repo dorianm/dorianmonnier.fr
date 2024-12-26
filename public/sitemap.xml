@@ -2,10 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://dorianmonnier.fr/</loc>
+    <lastmod>2024-12-26T11:30:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://dorianmonnier.fr/tags/hello-world/</loc>
+    <lastmod>2024-12-26T11:30:00+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://dorianmonnier.fr/posts/2024-12-26-hello-world/</loc>
+    <lastmod>2024-12-26T11:30:00+01:00</lastmod>
+  </url><url>
+    <loc>https://dorianmonnier.fr/posts/</loc>
+    <lastmod>2024-12-26T11:30:00+01:00</lastmod>
+  </url><url>
+    <loc>https://dorianmonnier.fr/tags/</loc>
+    <lastmod>2024-12-26T11:30:00+01:00</lastmod>
+  </url><url>
+    <loc>https://dorianmonnier.fr/categories/</loc>
   </url>
 </urlset>
