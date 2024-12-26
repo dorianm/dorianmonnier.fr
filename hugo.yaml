@@ -3,14 +3,14 @@ baseURL: 'https://dorianmonnier.fr/'
 languageCode: 'en-us'
 title: 'Dorian Monnier'
 enableEmoji: true
-#menu:
-#  main:
-#    - identifier: 'posts'
-#      name: 'Posts'
-#      url: '/posts/'
-#    - identifier: 'Feed'
-#      name: 'RSS'
-#      url: '/index.xml'
+menu:
+  main:
+    - identifier: 'posts'
+      name: 'Posts'
+      url: '/posts/'
+    - identifier: 'Feed'
+      name: 'RSS'
+      url: '/index.xml'
 theme: 'PaperMod'
 params:
   defaultTheme: auto
@@ -18,8 +18,6 @@ params:
   ShowReadingTime: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
-  ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
   author: 'Dorian Monnier'
   profileMode:
     enabled: true
@@ -37,6 +35,4 @@ params:
       url: "https://bsky.app/profile/dorianmonnier.fr"
 markup:
   highlight:
-    anchorLineNos: true
     codeFences: true
-    lineNos: true
