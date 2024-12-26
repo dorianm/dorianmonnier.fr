@@ -7,14 +7,14 @@ tags = ['Tailscale', 'LocalAPI', 'TIL']
 
 ## Context
 
-I use Tailscale to secure network communication and I wanted to authenticate users coming from the Tailscale network.
+I use Tailscale to secure network communication, and I wanted to authenticate users coming from the Tailscale network.
 
 The goal was to reproduce the behavior in the [golink](https://github.com/tailscale/golink) application.
-When a user comes from the Tailscale network, the application should authenticate it and give it access to the application based on roles defined in Tailscale ACL.
+When users come from the Tailscale network, the application should authenticate them and give them access to the application based on roles defined in Tailscale ACL.
 
 ## Solution
 
-Tailscale exposes a HTTP API through a Unix Socket named `LocalAPI`.
+Tailscale exposes an HTTP API through a Unix Socket named `LocalAPI`.
 
 It can be used for many things. In my case, I needed to authenticate a user coming from Tailnet.
 I used it to get information about a Tailscale user by calling the `whois` endpoint.
@@ -65,8 +65,8 @@ This API is equivalent to the `tailscale whois` command, but it can be used from
 
 ## Documentation
 
-Unfortunately, this API is not documented yet.
-A Go SDK exists to interact with it : [Tailscale LocalClient](https://pkg.go.dev/tailscale.com/client/tailscale#LocalClient).
+Unfortunately, LocalAPI is not documented yet.
+A Go SDK exists to interact with it: [Tailscale LocalClient](https://pkg.go.dev/tailscale.com/client/tailscale#LocalClient).
 When using another language we have to check API calls in the source code to reproduce them:
 
 - [Go LocalClient source code](https://github.com/tailscale/tailscale/blob/v1.78.3/client/tailscale/localclient.go#L60)
