@@ -26,8 +26,11 @@ Example with `curl`:
 ```shell
 curl \
     --unix-socket /run/tailscale/tailscaled.sock \
-    'http://local-tailscaled.sock/localapi/v0/whois?addr=tailnetIpAddr'
+    'http://local-tailscaled.sock/localapi/v0/whois?addr=remoteAddress[:remotePort]'
 ```
+
+**Update**: the `remotePort` is not mandatory but can be useful to get information when using Tailscale in [userspace mode](https://tailscale.com/kb/1112/userspace-networking).
+Thank you [Brad Fitzpatrick](https://bsky.app/profile/bradfitz.com) for the clarification [in Bluesky](https://bsky.app/profile/bradfitz.com/post/3leabcqqvek23).
 
 JSON returned (truncated):
 
