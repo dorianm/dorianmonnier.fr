@@ -33,8 +33,6 @@ params:
       url: "https://codeberg.org/dorianmonnier"
     - name: "stackoverflow"
       url: "https://stackoverflow.com/users/1369579/dorian"
-    - name: "bluesky"
-      url: "https://bsky.app/profile/dorianmonnier.fr"
     - name: "mastodon"
       url: "https://hachyderm.io/@dorian"
 markup:
