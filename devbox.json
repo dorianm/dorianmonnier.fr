@@ -1,0 +1,10 @@
+{
+  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.17.5/.schema/devbox.schema.json",
+  "packages": ["hugo@0.150.0"],
+  "shell": {
+    "scripts": {
+      "server": ["hugo server"],
+      "build": ["hugo --gc --minify"]
+    }
+  }
+}
